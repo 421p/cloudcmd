@@ -82,7 +82,6 @@ Cloud Commander supports command line parameters:
 | `--progress`                  | show progress of file operations
 | `--confirm-copy`              | confirm copy
 | `--confirm-move`              | confirm move
-| `--html-dialogs`              | use html dialogs
 | `--open`                      | open web browser when server started
 | `--name`                      | set tab name in web browser
 | `--one-panel-mode`            | set one panel mode
@@ -105,7 +104,6 @@ Cloud Commander supports command line parameters:
 | `--no-progress`               | do not show progress of file operations
 | `--no-confirm-copy`           | do not confirm copy
 | `--no-confirm-move`           | do not confirm move
-| `--no-html-dialogs`           | do not use html dialogs
 | `--no-contact`                | disable contact
 | `--no-config-dialog`          | disable config dialog
 | `--no-console`                | disable console
@@ -376,7 +374,6 @@ Here is description of options:
     "progress"          : true,     /* show progress of file operations         */
     "confirmCopy"       : true,     /* confirm copy                             */
     "confirmMove"       : true,     /* confirm move                             */
-    "htmlDialogs"       : true,     /* use html dialogs                         */
     "showConfig"        : false,    /* show config at startap                   */
     "onePanelMode"      : false,    /* set one panel mode                       */
     "contact"           : true,     /* enable contact                           */

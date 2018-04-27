@@ -20,7 +20,6 @@
     "root": "/",
     "prefix": "",
     "progress": true,
-    "htmlDialogs": true,
     "contact": true,
     "confirmCopy": true,
     "confirmMove": true,

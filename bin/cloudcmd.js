@@ -48,7 +48,6 @@ const args = require('minimist')(argv.slice(2), {
         'one-panel-mode',
         'confirm-copy',
         'confirm-move',
-        'html-dialogs',
         'show-config',
         'vim',
         'keys-panel',
@@ -78,7 +77,6 @@ const args = require('minimist')(argv.slice(2), {
         'one-panel-mode': choose(env.bool('one_panel_mode'), config('onePanelMode')),
         'confirm-copy': choose(env.bool('confirm_copy'), config('confirmCopy')),
         'confirm-move': choose(env.bool('confirm_move'), config('confirmMove')),
-        'html-dialogs': config('htmlDialogs'),
         'vim': choose(env.bool('vim'), config('vim')),
         'columns': env('columns') || config('columns') || '',
         'keys-panel': env.bool('keys_panel') || config('keysPanel'),
@@ -130,7 +128,6 @@ function main() {
     config('root', args.root);
     config('vim', args.vim);
     config('columns', args.columns);
-    config('htmlDialogs', args['html-dialogs']);
     config('confirmCopy', args['confirm-copy']);
     config('confirmMove', args['confirm-move']);
     config('onePanelMode', args['one-panel-mode']);
