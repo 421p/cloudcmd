@@ -85,6 +85,7 @@ Cloud Commander supports command line parameters:
 | `--html-dialogs`              | use html dialogs
 | `--open`                      | open web browser when server started
 | `--name`                      | set tab name in web browser
+| `--one-panel-mode`            | show one file panel (**deprecated**: use `--one-file-panel` instead)
 | `--one-file-panel`            | show one file panel
 | `--keys-panel`                | show keys panel
 | `--contact`                   | enable contact
@@ -368,6 +369,7 @@ Here is description of options:
     "online"            : true,     /* load js files from cdn or local path     */
     "open"              : false     /* open web browser when server started     */
     "cache"             : true,     /* enable cache                             */
+    "onePanelMode"      : false,    /* show one file panel (deprecated)         */
     "oneFilePanel"      : false,    /* show one file panel                      */
     "keysPanel"         : true,     /* show classic panel with buttons of keys  */
     "port"              : 8000,     /* http port                                */
@@ -405,6 +407,7 @@ Some config options can be overridden with `environment variables` such:
 - `CLOUDCMD_TERMINAL_PATH` - set terminal path
 - `CLOUDCMD_CONFIG_DIALOG` - enable config dialog
 - `CLOUDCMD_KEYS_PANEL` - show keys panel
+- `CLOUDCMD_ONE_PANEL_MODE` - show one file panel (**deprecated**: use `CLOUDCMD_ONE_FILE_PANEL` instead)
 - `CLOUDCMD_ONE_FILE_PANEL` - show one file panel
 - `CLOUDCMD_AUTH` - enable authentication
 - `CLOUDCMD_USERNAME` - set username

@@ -37,6 +37,14 @@ const clean = (a) => a.filter(notEmpty);
 
 const isDev = process.env.NODE_ENV === 'development';
 
+const deprecateOnePanelMode = (value) => {
+    const noop = () => {};
+    
+    util.deprecate(noop, 'onePanelMode is deprecated, use oneFilePanel instead', 'DP0010')();
+    
+    config('oneFilePanel', value);
+}
+
 module.exports = (params) => {
     const p = params || {};
     const options = p.config || {};
@@ -49,6 +57,9 @@ module.exports = (params) => {
     
     keys.forEach((name) => {
         const value = options[name];
+        
+        if (name === 'onePanelMode')
+            return deprecateOnePanelMode();
         
         if (/root|editor|packer|columns/.test(name))
             validate[name](value);
